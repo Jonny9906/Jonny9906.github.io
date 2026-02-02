@@ -11,7 +11,7 @@ function Navbar() {
         <NavLink to="/projects" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
           Projects
         </NavLink>
-        <a href="/resume.docx" className="nav-link" target="_blank" rel="noopener noreferrer" download>
+        <a href="/Jonathan_Nguyen_resume.pdf" className="nav-link" target="_blank" rel="noopener noreferrer">
           Resume
         </a>
       </div>
