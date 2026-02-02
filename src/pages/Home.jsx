@@ -7,7 +7,7 @@ function Home() {
         <div className="hero-content">
           <p className="tagline">Welcome to my corner of the web</p>
           <h1 className="name">JONATHAN</h1>
-          <p className="subtitle">Stay awhile and explore.</p>
+          <p className="subtitle">Making cool stuff with code.</p>
 
           <div className="social-links">
             <a
