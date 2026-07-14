@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "resume:build": "sh scripts/build-resume.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },

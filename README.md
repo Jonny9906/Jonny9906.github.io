@@ -1,16 +1,30 @@
-# React + Vite
+# Jonathan Nguyen's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React and Vite portfolio configured for GitHub Pages at
+[jonny9906.github.io/personal-website](https://jonny9906.github.io/personal-website/).
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```sh
+npm ci
+npm run dev
+```
 
-## React Compiler
+Vite serves the app under `/personal-website/` so local and GitHub Pages asset
+paths behave the same way.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Resume
 
-## Expanding the ESLint configuration
+The resume source is `resume/jonathan_nguyen_resume.tex`. Rebuild the public PDF
+with [Tectonic](https://tectonic-typesetting.github.io/):
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```sh
+npm run resume:build
+```
+
+## Deployment
+
+Pushing to `main` runs `.github/workflows/deploy-pages.yml`, which lints, builds,
+and deploys `dist` through GitHub Actions. GitHub Free requires this repository to
+be public before Pages can be enabled. Then, in **Settings > Pages**, set **Source**
+to **GitHub Actions**.
