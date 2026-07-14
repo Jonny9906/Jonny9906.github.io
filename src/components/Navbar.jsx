@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 
+const resumeUrl = `${import.meta.env.BASE_URL}Jonathan_Nguyen_resume.pdf`
+
 function Navbar() {
   return (
     <nav className="navbar">
@@ -11,7 +13,7 @@ function Navbar() {
         <NavLink to="/projects" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
           Projects
         </NavLink>
-        <a href="/Jonathan_Nguyen_resume.pdf" className="nav-link" target="_blank" rel="noopener noreferrer">
+        <a href={resumeUrl} className="nav-link" target="_blank" rel="noopener noreferrer">
           Resume
         </a>
       </div>

@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in LaTeX
+% Based on Jake Gutierrez's template
+% https://github.com/jakegut/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Jonathan Nguyen} \\ \vspace{1pt}
+    \small (650) 669-9406 $|$
+    \href{mailto:jonathan.b.nguyen@berkeley.edu}{\underline{jonathan.b.nguyen@berkeley.edu}} $|$
+    Palo Alto, CA
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of California, Berkeley}{Berkeley, CA}
+      {Bachelor of Arts in Applied Mathematics $|$ Cumulative Transfer GPA: 3.93/4.00}{Aug. 2026 -- May 2028 (Expected)}
+      \resumeItemListStart
+        \resumeItem{\textbf{Academic Focus:} Machine Learning, Optimization \& Data Science}
+        \resumeItem{\textbf{Planned Coursework:} CS 61A, CS 61B, CS 70, EECS 126, EECS 127, MATH 156, MATH 170, IND ENG 142A, IND ENG 142B}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SkyVault AI}{Palo Alto, CA}
+      {AI Engineer Intern}{Oct. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered \textit{SkyvaultQuarterback}, a Python and Claude platform that centralizes and manages a multibillion-dollar data-center sales pipeline in PostgreSQL/Supabase while preserving Excel import/export workflows}
+        \resumeItem{Built a schema-constrained LLM extraction pipeline that converts emails, Read.ai transcripts, and screenshots into structured deal facts using Claude, Pydantic validation, source provenance, and model-call logging}
+        \resumeItem{Implemented authenticated CLI workflows, PostgreSQL row-level security, audited writes, append-only change history, and reversible updates to secure and trace pipeline-data changes}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Florida State University, Department of Mathematics}{Tallahassee, FL}
+      {Undergraduate Research Assistant $|$ Advisor: Dr. Astrit Tola}{Sep. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Conducted machine-learning research on classifying autism (ABIDE), Alzheimer's, and Parkinson's disease from fMRI-derived functional-connectivity graphs using GNNs and Topological Data Analysis}
+        \resumeItem{Helped improve ABIDE autism-classification accuracy from 58\% to 71\% (+13 percentage points) by iterating on graph-based deep-learning architectures in PyTorch}
+        \resumeItem{Implemented an SPD-manifold learning pipeline with Fréchet mean estimation, tangent-space projection, and differentiable top-\textit{k} graph sparsification via Gumbel-Softmax}
+        \resumeItem{Designed an edges-as-nodes directed line-graph model for seven-label protein--protein interaction classification, connecting interaction nodes that share a protein endpoint}
+        \resumeItem{Implemented five-view GraphSAGE and Polynormer branches with learned fusion across topology, ESM2 sequence embeddings, and pLDDT confidence features; added duplicate handling and split-overlap checks}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Project Motion}{Palo Alto, CA}
+      {Founder \& Lead Developer}{2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built a computer-vision biomechanics platform using YOLOv8-L Pose to extract 17 body keypoints per video frame and reconstruct baseball swing kinematics; adopted by athletes at Stanford, Cal Poly, Brown, and Holy Cross}
+        \resumeItem{Integrated pose estimates with a Unity/C\# skeletal renderer and joint-kinematics pipeline to convert video into 3D motion, quantitative swing metrics, and coach-facing feedback}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{AIDJ} $|$ \emph{Python, librosa}}{}
+      \resumeItemListStart
+        \resumeItem{Built an end-to-end music-information-retrieval and DSP system that estimates beat grids and musical key, orders tracks by tempo and Camelot compatibility, and renders phrase-aligned, beatmatched mixes}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Black-Hole GPU Ray Tracer} $|$ \emph{C++, GLSL, OpenGL}}{}
+      \resumeItemListStart
+        \resumeItem{Built a GPU-accelerated ray tracer for Schwarzschild gravitational lensing, numerically integrating null geodesics in an OpenGL compute shader}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, SQL, C\#, Java, GLSL} \\
+     \textbf{ML \& Data}{: PyTorch, PyTorch Geometric, scikit-learn, Ultralytics YOLO, OpenCV, NumPy, pandas, librosa} \\
+     \textbf{Models \& Methods}{: Graph Neural Networks (GCN, GraphSAGE), Transformers, Attention, LLM Extraction, Computer Vision, Pose Estimation, Topological Data Analysis, SPD Manifold Learning} \\
+     \textbf{Systems \& Tools}{: Claude API, Pydantic, PostgreSQL, Supabase, Docker, Kubernetes, Git, Unity, OpenGL}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

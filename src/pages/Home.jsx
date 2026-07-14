@@ -5,9 +5,9 @@ function Home() {
     <section className="home">
       <div className="hero">
         <div className="hero-content">
-          <p className="tagline">Welcome to my corner of the web</p>
-          <h1 className="name">JONATHAN</h1>
-          <p className="subtitle">Making cool stuff with code.</p>
+          <p className="tagline">Applied mathematics, machine learning, and systems</p>
+          <h1 className="name">JONATHAN NGUYEN</h1>
+          <p className="subtitle">Building intelligent systems from research to production.</p>
 
           <div className="social-links">
             <a
@@ -22,7 +22,7 @@ function Home() {
               </svg>
             </a>
             <a
-              href="mailto:jonnyng06@gmail.com"
+              href="mailto:jonathan.b.nguyen@berkeley.edu"
               aria-label="Email"
               className="social-link"
             >
