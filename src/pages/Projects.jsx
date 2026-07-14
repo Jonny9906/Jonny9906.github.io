@@ -12,7 +12,7 @@ const researchEntries = [
       'Researching neurological-disease classification from fMRI-derived functional-connectivity graphs using graph neural networks and topological data analysis.',
       'Helped improve ABIDE autism-classification accuracy from 58% to 71% by iterating on graph-based deep-learning architectures in PyTorch.',
       'Implemented SPD-manifold learning with Frechet mean estimation, tangent-space projection, and differentiable top-k graph sparsification via Gumbel-Softmax.',
-      'Built directed line-graph and five-view GraphSAGE/Polynormer models that fuse topology, ESM2 sequence embeddings, and pLDDT confidence features.',
+      'Built directed line-graph and five-view GraphSAGE/Polynormer models for seven-label protein–protein interaction (PPI) classification, fusing topology, ESM2 sequence embeddings, and pLDDT confidence features.',
     ],
     methods: 'PyTorch, PyTorch Geometric, GraphSAGE, Polynormer, TDA, SPD manifolds',
   },
@@ -63,7 +63,7 @@ const projectEntries = [
 const skillGroups = [
   ['Languages', 'Python, C++, SQL, C#, Java, GLSL'],
   ['ML and Data', 'PyTorch, PyTorch Geometric, scikit-learn, Ultralytics YOLO, OpenCV, NumPy, pandas, librosa'],
-  ['Methods', 'Graph neural networks, transformers, attention, computer vision, pose estimation, topological data analysis, SPD-manifold learning'],
+  ['Methods', 'Graph neural networks, transformers, attention, computer vision, pose estimation, topological data analysis, SPD-manifold learning, PPI classification'],
   ['Systems', 'Claude API, Pydantic, PostgreSQL, Supabase, Docker, Kubernetes, Git, Unity, OpenGL'],
 ]
 

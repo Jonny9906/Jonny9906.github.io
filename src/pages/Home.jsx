@@ -44,9 +44,10 @@ function Home() {
         </p>
         <p>
           At Florida State University, I study functional-connectivity graphs for
-          neurological-disease classification. My recent work includes SPD-manifold
-          representations, differentiable graph sparsification, line-graph models,
-          and learned fusion across multiple biological data views.
+          neurological-disease classification and protein–protein interaction (PPI)
+          networks. My recent work includes SPD-manifold representations,
+          differentiable graph sparsification, line-graph models, and learned fusion
+          across multiple biological data views.
         </p>
         <p>
           I also build applied systems at SkyVault AI and lead Project Motion, a
@@ -59,7 +60,7 @@ function Home() {
         <ul className="interest-list">
           <li>
             <strong>Graph representation learning</strong>
-            <span>GNN architectures, multi-view fusion, and learning on biological networks.</span>
+            <span>GNN architectures, multi-view fusion, and learning on functional-connectivity and PPI networks.</span>
           </li>
           <li>
             <strong>Geometric and topological machine learning</strong>

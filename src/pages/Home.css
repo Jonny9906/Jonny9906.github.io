@@ -1,18 +1,18 @@
 .home {
-  padding: 3.75rem 0 5rem;
+  padding: 3.5rem 0 5rem;
 }
 
 .bio {
   display: grid;
-  grid-template-columns: 156px minmax(0, 1fr);
+  grid-template-columns: 140px minmax(0, 1fr);
   gap: 2rem;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .bio-portrait {
-  width: 156px;
-  height: 156px;
+  width: 140px;
+  height: 140px;
 }
 
 .portrait-img {
@@ -41,10 +41,10 @@
 .bio-name {
   color: var(--text-color);
   font-family: var(--serif);
-  font-size: 2.6rem;
+  font-size: 2.25rem;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 1.05;
+  line-height: 1.15;
 }
 
 .bio-affiliation {
@@ -73,25 +73,25 @@
 }
 
 .section {
-  margin-top: 2.75rem;
+  margin-top: 3rem;
 }
 
 .section-title {
   margin-bottom: 1rem;
-  padding-bottom: 0.45rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--rule-color);
   color: var(--text-color);
   font-family: var(--serif);
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0;
 }
 
 .prose p {
-  margin-bottom: 0.85rem;
+  margin-bottom: 1rem;
   color: var(--text-color);
-  font-size: 1rem;
-  line-height: 1.72;
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
 .prose p:last-child {
@@ -161,23 +161,23 @@
 
 @media (max-width: 640px) {
   .home {
-    padding: 2.25rem 0 3.5rem;
+    padding: 2rem 0 3rem;
   }
 
   .bio {
-    grid-template-columns: 108px minmax(0, 1fr);
+    grid-template-columns: 100px minmax(0, 1fr);
     gap: 1.25rem;
     align-items: start;
     margin-bottom: 2.5rem;
   }
 
   .bio-portrait {
-    width: 108px;
-    height: 108px;
+    width: 100px;
+    height: 100px;
   }
 
   .bio-name {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .bio-kicker {
