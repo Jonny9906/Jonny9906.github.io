@@ -6,14 +6,14 @@
 
 :root {
   color-scheme: light;
-  --bg-color: #fafafa;
-  --text-color: #202326;
-  --text-secondary: #56606a;
-  --text-muted: #7b858e;
+  --bg-color: #fbfaf7;
+  --text-color: #1a1a1a;
+  --text-secondary: #555555;
+  --text-muted: #77736c;
   --accent-color: #8b2c2c;
-  --secondary-accent: #2d6673;
-  --rule-color: #d9dee2;
-  --rule-soft: #e9ecee;
+  --secondary-accent: #8b2c2c;
+  --rule-color: #e5e1d8;
+  --rule-soft: #eeeae2;
   --serif: 'Crimson Pro', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
@@ -28,7 +28,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -56,7 +56,7 @@ a:focus-visible {
 }
 
 ::selection {
-  background-color: #dbe9eb;
+  background-color: #f1e9d2;
   color: var(--text-color);
 }
 
@@ -69,10 +69,10 @@ a:focus-visible {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c7ced3;
+  background: #d6d1c4;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #aeb8bf;
+  background: #b9b3a4;
 }

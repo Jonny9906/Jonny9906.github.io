@@ -7,7 +7,7 @@
 main {
   flex: 1;
   width: 100%;
-  max-width: 820px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -21,7 +21,7 @@ main {
 
 .site-footer-inner {
   width: 100%;
-  max-width: 820px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 1.5rem 2rem 2rem;
   display: flex;
