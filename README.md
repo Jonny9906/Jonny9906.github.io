@@ -1,7 +1,7 @@
 # Jonathan Nguyen's Portfolio
 
 A React and Vite portfolio configured for GitHub Pages at
-[jonny9906.github.io/personal-website](https://jonny9906.github.io/personal-website/).
+[jonny9906.github.io](https://jonny9906.github.io/).
 
 ## Local development
 
@@ -10,8 +10,7 @@ npm ci
 npm run dev
 ```
 
-Vite serves the app under `/personal-website/` so local and GitHub Pages asset
-paths behave the same way.
+Vite serves the app from `/`, matching the GitHub Pages user site URL.
 
 ## Resume
 
@@ -23,6 +22,11 @@ npm run resume:build
 ```
 
 ## Deployment
+
+For the root URL to work, the GitHub repository must be named
+`Jonny9906.github.io` (a GitHub user site repository). If the repository keeps
+the name `personal-website`, GitHub Pages will serve it at
+`/personal-website/` instead.
 
 Pushing to `main` runs `.github/workflows/deploy-pages.yml`, which lints, builds,
 and deploys `dist` through GitHub Actions. GitHub Free requires this repository to
